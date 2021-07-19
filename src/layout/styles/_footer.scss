@@ -1,0 +1,17 @@
+@import "../../scss/global";
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+}
+.footer__container p {
+  font-family: $questrial;
+  font-size: 0.8rem;
+  color: $secondaryLight;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+.footer__container p span {
+  color: $primary;
+}

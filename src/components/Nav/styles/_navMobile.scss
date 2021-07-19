@@ -1,0 +1,42 @@
+@import "../../../scss/global";
+
+.menu__mobile ul {
+  position: absolute;
+  bottom: -200vh;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $neutral;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  transition: all 0.5s ease;
+}
+.visible ul {
+  bottom: -100vh;
+}
+.menu__mobile ul li {
+  width: 100%;
+}
+
+.menu__mobile ul li button {
+  border: none;
+  width: 100%;
+  background: none;
+  color: $secondary;
+  cursor: pointer;
+  font-family: $questrial;
+  padding: 15px 0;
+  transition: all 0.5s ease;
+}
+.menu__mobile .active {
+  background-color: $primary;
+  color: $neutral;
+  width: 100%;
+}
+.search {
+  display: block;
+  margin: 0 auto;
+}

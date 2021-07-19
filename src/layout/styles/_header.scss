@@ -1,0 +1,52 @@
+@import "../../scss/global.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: $neutral;
+  z-index: 2;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 85%;
+  margin: 3rem auto;
+}
+.menu__logo {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  gap: 1rem;
+  user-select: none;
+}
+.menu__logo-name {
+  color: $secondary;
+  font-family: $montserrat;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+.menu__logo-slogan {
+  color: $secondaryLight;
+  font-family: $montserrat;
+  font-size: 0.6rem;
+  letter-spacing: 3px;
+}
+.menu-icon {
+  width: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+  header {
+    position: sticky;
+    top: 0;
+  }
+  .menu {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+  }
+}

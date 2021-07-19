@@ -1,0 +1,74 @@
+@import "./global.scss";
+
+.btn {
+  border: none;
+  cursor: pointer;
+  padding: 10px 25px;
+  transition: all 0.3s ease;
+  font-family: $questrial;
+}
+.btn-naked {
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+.btn-primary {
+  @extend .btn;
+  background-color: $primary;
+  color: $neutral;
+  font-size: 0.8rem;
+}
+
+.btn-neutral {
+  @extend .btn;
+  background-color: $neutral;
+  color: $primary;
+  font-size: 0.8rem;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 100px;
+  background-color: $secondary;
+  color: #fff;
+  font-family: $questrial;
+  font-size: 0.8rem;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -50px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: $secondary transparent transparent transparent;
+}
+
+@media screen and (min-width: 480px) {
+  .btn-neutral:hover,
+  .btn-primary:hover {
+    transform: scale(1.1);
+    box-shadow: 3px 2px $secondaryLight;
+  }
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+}

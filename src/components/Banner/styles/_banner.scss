@@ -1,0 +1,31 @@
+@import "../../../scss/global";
+.banner {
+  background-color: $primary;
+  // background-image: url(../../../assets/img/banner.jpg);
+  background-size: cover;
+  width: 90%;
+  margin: 0 auto;
+  height: 70vh;
+  min-height: 300px;
+  position: relative;
+}
+.banner__content {
+  color: $neutral;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.banner__content h1 {
+  letter-spacing: 5px;
+  font-family: $montserrat;
+  font-size: 2rem;
+}
+.banner__content p {
+  letter-spacing: 3px;
+  line-height: 1rem;
+  font-family: $questrial;
+  font-size: 0.7rem;
+  margin: 20px 0;
+}
