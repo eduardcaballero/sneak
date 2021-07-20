@@ -1,7 +1,7 @@
 @import "../../../scss/global";
 .banner {
   background-color: $primary;
-  // background-image: url(../../../assets/img/banner.jpg);
+  // background-image: url(../../../assets./img/banner.jpg);
   background-size: cover;
   width: 90%;
   margin: 0 auto;
@@ -16,16 +16,17 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-}
-.banner__content h1 {
-  letter-spacing: 5px;
-  font-family: $montserrat;
-  font-size: 2rem;
-}
-.banner__content p {
-  letter-spacing: 3px;
-  line-height: 1rem;
-  font-family: $questrial;
-  font-size: 0.7rem;
-  margin: 20px 0;
+
+  h1 {
+    letter-spacing: 5px;
+    font-family: $montserrat;
+    font-size: 2rem;
+  }
+  p {
+    letter-spacing: 3px;
+    line-height: 1rem;
+    font-family: $questrial;
+    font-size: 0.7rem;
+    margin: 20px 0;
+  }
 }

@@ -12,16 +12,16 @@
 .views {
   margin: 60px 10px;
   display: flex;
-}
-.views button {
-  border: none;
-  cursor: pointer;
-  background: none;
-  margin: 0 10px;
-  opacity: 0.5;
-}
-.views button.active {
-  opacity: 1;
+  button {
+    border: none;
+    cursor: pointer;
+    background: none;
+    margin: 0 10px;
+    opacity: 0.5;
+  }
+  button.active {
+    opacity: 1;
+  }
 }
 .container button.btn-primary {
   display: block;

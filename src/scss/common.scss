@@ -48,17 +48,17 @@
   margin-left: -50px;
   opacity: 0;
   transition: opacity 0.3s;
-}
 
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: $secondary transparent transparent transparent;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: $secondary transparent transparent transparent;
+  }
 }
 
 @media screen and (min-width: 480px) {

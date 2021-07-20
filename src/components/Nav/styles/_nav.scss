@@ -1,26 +1,30 @@
 @import "../../../scss/global";
 
-.menu__desktop ul {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  list-style: none;
-}
-.menu__desktop ul li button {
-  border: none;
-  background: none;
-  color: $secondary;
-  cursor: pointer;
-  font-family: $questrial;
-  padding: 5px 20px;
-  transition: all 0.5s ease;
-}
-.menu__desktop ul li button:hover {
-  background-color: $primary;
-  color: $neutral;
-}
-.menu__desktop .active {
-  background-color: $primary;
-  color: $neutral;
+.menu__desktop {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+  }
+
+  li button {
+    border: none;
+    background: none;
+    color: $secondary;
+    cursor: pointer;
+    font-family: $questrial;
+    padding: 5px 20px;
+    transition: all 0.5s ease;
+
+    &:hover {
+      background-color: $primary;
+      color: $neutral;
+    }
+    &.active {
+      background-color: $primary;
+      color: $neutral;
+    }
+  }
 }
